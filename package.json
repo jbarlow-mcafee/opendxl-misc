@@ -1,0 +1,25 @@
+{
+  "name": "dxl-misc",
+  "version": "0.0.1",
+  "description": "Misc OpenDXL tools",
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "dependencies": {
+    "rimraf": "^2.6.2",
+    "standard": "^10.0.3",
+    "jsdoc": "^3.5.5",
+    "jshint": "^2.9.5",
+    "snazzy": "^7.0.0"
+  },
+  "eslintConfig": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jbarlow-mcafee/opendxl-misc.git"
+  },
+  "scripts": {
+    "lint": "npm run lint:jshint && npm run lint:standard",
+    "lint:jshint": "jshint *.js",
+    "lint:standard": "standard | snazzy"
+  }
+}
